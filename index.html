@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--import countupjs-->
+    <script src="countUp.js"></script>
+    <!--import countupjs ends-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="progress">
+      <div class="indeterminate" style="width: 80%"></div>
+  </div>
+    <h1 class="center-align white-text">Redirecting to Behance.net/mogno...</h1>
+    <h2 class="center-align white-text" id="myTargetElement"></h2>
+    <div class="center-align">
+      <img class="responsive-img" src="logo.gif">
+    </div>
+    <!--Footer starts-->
+    <footer class="page-footer black">
+         <div class="footer-copyright">
+           <div class="container">
+           © 2017 Copyright Cloud3
+           <a class="grey-text text-lighten-4 right" href="https://www.facebook.com/cloud3bd">Official Page</a>
+           </div>
+         </div>
+       </footer>
+    <!--Footer ends-->
+    <!--Timeout script -->
+    <script>
+      // redirect to https://www.behance.net/mogno after 2 seconds
+      window.setTimeout(function() {
+          window.location.href = 'https://www.behance.net/mogno';
+      }, 2000);
+    </script>
+    <!--Timeout script ends -->
+    <!--countup script-->
+    <script>
+      var options = {
+        useEasing : true,
+        useGrouping : true,
+        separator : ',',
+        decimal : '.',
+        prefix : '',
+        suffix : ''
+      };
+      var demo = new CountUp("myTargetElement", 0, 100, 0, 2.5, options);
+      demo.start();
+      </script>
+    <!--countup script ends-->
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  </body>
+</html>
