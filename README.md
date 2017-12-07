@@ -1,2 +1,2 @@
 # tamzidfarhan-web
-Code that powers tamzidfarhan.com
+A redirector site to [https://tamzidfarhan.wixsite.com/tamzidfarhan](https://tamzidfarhan.wixsite.com/tamzidfarhan)
